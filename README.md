@@ -1,113 +1,132 @@
-# Billed front-end
+# OpenClassrooms – Project 9 Billed
 
-Projet n°9 OpenClassrooms - [Parcours Développeur d'application JavaScript 
-React](https://openclassrooms.com/fr/paths/877-developpeur-dapplication-javascript-react)
+## 📌 Description
 
-## Objectifs
+Source code of **Project 9 – Billed**, completed as part of the **OpenClassrooms JavaScript React Developer path**.
 
-![img.png](img.png)
+This project focuses on **debugging and testing a SaaS HR application**.
+The main objectives were to:
 
-## Résultats et couverture des tests
+* **Debug** parts of the front-end using the **Chrome Debugger**
+* Write **unit tests** in JavaScript to validate components
+* Implement **integration tests** to ensure proper interaction between features
+* Draft a **manual end-to-end test plan** to verify the full employee workflow
 
-- CI automatisée à chaque PR sur main avec [GitHub Actions](https://github.com/sedomu/oc_p9_Billed-app-FR-Front/actions/workflows/node.js.yml) (tous 
-  tests ok ✅)
-- Rapport Jest: publiés automatiquement à chaque PR sur main avec [GitHub 
-  Pages](https://sedomu.github.io/oc_p9_Billed-app-FR-Front/) (couverture > 
-  80% ✅)
-- Assurance du code version Alpha avec le plan de tests E2E (exécution manuelle)
+Both the **backend** and **frontend** were provided as starter repositories, and the work consisted of **fixing existing bugs** and **completing missing test coverage**.
 
-## Fonctionnement du projet
+⚠️ **Educational project**: This repository was created for learning purposes during my training. It is **not intended for production use**.
 
-### L'architecture du projet :
-Ce projet, dit frontend, est connecté à un service API backend que vous devez aussi lancer en local.
+---
 
-Le projet backend se trouve ici: https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back
+## 🎯 Learning Objectives
 
-### Organiser son espace de travail :
-Pour une bonne organization, vous pouvez créer un dossier bill-app dans lequel vous allez cloner le projet backend et par la suite, le projet frontend:
+* Write **integration tests** in JavaScript
+* Debug a web application with the **Chrome Debugger**
+* Write **unit tests** in JavaScript
+* Draft a **manual end-to-end test plan**
 
-Clonez le projet backend dans le dossier bill-app :
-```
-$ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back.git
-```
+---
 
-```
-bill-app/
-   - Billed-app-FR-Back
-```
+## 🏗 Project Structure & Setup
 
-Clonez le projet frontend dans le dossier bill-app :
-```
-$ git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Front.git
-```
+### Project architecture
 
-```
-bill-app/
-   - Billed-app-FR-Back
-   - Billed-app-FR-Front
+This project is the **frontend** connected to a **backend API** which must also be run locally.
+
+Backend repository: [Billed-app-FR-Back](https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back)
+
+Clone the backend first:
+
+```bash
+git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back.git
 ```
 
-### Comment lancer l'application en local ?
+Then clone the frontend (this repository):
 
-#### étape 1 - Lancer le backend :
-
-Suivez les indications dans le README du projet backend.
-
-#### étape 2 - Lancer le frontend :
-
-Allez au repo cloné :
-```
-$ cd Billed-app-FR-Front
+```bash
+git clone https://github.com/sedomu/oc_p9_Billed-app-FR-Front.git
 ```
 
-Installez les packages npm (décrits dans `package.json`) :
-```
-$ npm install
-```
+---
 
-Installez live-server pour lancer un serveur local :
-```
-$ npm install -g live-server
-```
+### Running the application locally
 
-Lancez l'application :
-```
-$ live-server
-```
+#### Step 1 – Start the backend
 
-Puis allez à l'adresse : `http://127.0.0.1:8080/`
+Follow the instructions in the [**backend README**](https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back/blob/main/README.md).
 
+#### Step 2 – Start the frontend
 
-## Comment lancer tous les tests en local avec Jest ?
-
-```
-$ npm run test
+```bash
+npm install
+npm install -g live-server
+live-server
 ```
 
-### Comment lancer un seul test ?
+Open the application in your browser at: `http://127.0.0.1:8080/`
 
-Installez jest-cli :
+---
+
+### User accounts
+
+* **Administrator:**
+
+  ```
+  username: admin@test.tld
+  password: admin
+  ```
+
+* **Employee:**
+
+  ```
+  username: employee@test.tld
+  password: employee
+  ```
+
+---
+
+## ✅ Test Results & Coverage
+
+* **CI** automatically runs on every PR to main via [GitHub Actions](https://github.com/sedomu/oc_p9_Billed-app-FR-Front/actions/workflows/node.js.yml) (all tests ✅)
+* **Jest reports** published automatically to [GitHub Pages](https://sedomu.github.io/oc_p9_Billed-app-FR-Front/) (coverage > 80% ✅)
+* Manual **end-to-end test plan** ensures functionality for the alpha version
+
+---
+
+### Running tests locally
+
+Run all tests with Jest:
+
+```bash
+npm run test
+```
+
+Run a single test file:
+
+```bash
+npm i -g jest-cli
+jest src/__tests__/your_test_file.js
+```
+
+View test coverage report:
 
 ```
-$npm i -g jest-cli
-$jest src/__tests__/your_test_file.js
+http://127.0.0.1:8080/coverage/lcov-report/
 ```
 
-### Comment voir la couverture de test ?
+---
 
-`http://127.0.0.1:8080/coverage/lcov-report/`
+## 🛠 Tech stack
 
-### Comptes et utilisateurs :
+* JavaScript (Vanilla)
+* Jest for unit & integration testing
+* Live Server for local development
+* Chrome Debugger for debugging
+* GitHub Actions for CI/CD
 
-Vous pouvez vous connecter en utilisant les comptes:
+---
 
-#### administrateur : 
-```
-utilisateur : admin@test.tld 
-mot de passe : admin
-```
-#### employé :
-```
-utilisateur : employee@test.tld
-mot de passe : employee
-```
+## ⚠️ Disclaimer
+
+This is a **training project** created as part of the OpenClassrooms curriculum.
+It is not optimised for production use. Some implementations may have been simplified to focus on learning objectives.
