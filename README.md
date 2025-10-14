@@ -29,6 +29,13 @@ Both the **backend** and **frontend** were provided as starter repositories, and
 
 ## 🏗 Project Structure & Setup
 
+### Branches
+
+This repo contains 2 branches:
+
+- `main`: contains the final code delivered
+- `bug-hunt-demo`: this branch, which is outdated on purpose, was used to demonstrate how I performed bug hunt in live during the project presentation
+
 ### Project architecture
 
 This project is the **frontend** connected to a **backend API** which must also be run locally.
