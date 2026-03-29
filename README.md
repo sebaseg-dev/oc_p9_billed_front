@@ -40,18 +40,18 @@ This repo contains 2 branches:
 
 This project is the **frontend** connected to a **backend API** which must also be run locally.
 
-Backend repository: [Billed-app-FR-Back](https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-back)
+Backend repository: [oc_p9_billed_back](https://github.com/sebaseg-dev/oc_p9_billed_back)
 
 Clone the backend first:
 
 ```bash
-git clone https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back.git
+git clone https://github.com/sebaseg-dev/oc_p9_billed_back.git
 ```
 
 Then clone the frontend (this repository):
 
 ```bash
-git clone https://github.com/sedomu/oc_p9_Billed-app-FR-Front.git
+git clone https://github.com/sebaseg-dev/oc_p9_billed_front.git
 ```
 
 ---
@@ -60,7 +60,7 @@ git clone https://github.com/sedomu/oc_p9_Billed-app-FR-Front.git
 
 #### Step 1 – Start the backend
 
-Follow the instructions in the [**backend README**](https://github.com/OpenClassrooms-Student-Center/Billed-app-FR-Back/blob/main/README.md).
+Follow the instructions in the [**backend README**](https://github.com/sebaseg-dev/oc_p9_billed_back/blob/main/README.md).
 
 #### Step 2 – Start the frontend
 
@@ -94,8 +94,8 @@ Open the application in your browser at: `http://127.0.0.1:8080/`
 
 ## ✅ Test Results & Coverage
 
-* **CI** automatically runs on every PR to main via [GitHub Actions](https://github.com/sedomu/oc_p9_Billed-app-FR-Front/actions/workflows/node.js.yml) (all tests ✅)
-* **Jest reports** published automatically to [GitHub Pages](https://sedomu.github.io/oc_p9_Billed-app-FR-Front/) (coverage > 80% ✅)
+* **CI** automatically runs on every PR to main via [GitHub Actions](https://github.com/sebaseg-dev/oc_p9_billed_front/actions/workflows/deploy-pages.yml) (all tests ✅),
+* then published automatically **Jest reports** to [GitHub Pages](https://sebaseg-dev.github.io/oc_p9_billed_front/) (coverage > 80% ✅)
 * Manual **end-to-end test plan** ensures functionality for the alpha version
 
 ---
